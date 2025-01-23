@@ -1,0 +1,22 @@
+@use "../helpers" as *;
+
+:root {
+  --color-light: #E2E4F3;
+  --color-gray: #8B8EAB;
+
+  --color-blue-10: #343964;
+  --color-blue-20: #393F6E;
+  --color-blue-light: #3E9FFF;
+
+  --color-red: #DD524C;
+  --color-yellow: #FFECC8;
+
+  --linear-gradient: linear-gradient(#E65895, #BC6BE8);
+
+  --font-family-base: "BeVietnamPro", sans-serif;
+
+  --container-width: #{rem(1600)};
+  --container-padding-x: #{rem(16)};
+
+  --transition-duration: 0.2s;
+}
