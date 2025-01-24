@@ -3,7 +3,7 @@ import axios from "axios";
 async function getQuestions() {
   try {
     const response = await axios.get(
-      "https://restcountries.com/v3.1/all?limit=10"
+      "https://restcountries.com/v3.1/all"
     );
 
     if (response.status === 200) {

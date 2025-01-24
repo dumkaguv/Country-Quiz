@@ -1,11 +1,16 @@
 import styles from "./QuestionList.module.scss";
+import useQuestions from "@/hooks/useQuestions";
 import getQuestions from "@/api/getQuestions";
 
+
 function QuestionCard() {
-  const data = getQuestions()
+  const { questions, processedData } = useQuestions(getQuestions)
+
+  console.log("processedData", processedData)
 
   return (
     <div className={styles.root}>
+      <div className={styles.questionTitle}>Which country does this flag belong to?</div>
       <ul className={styles.questionList}>
         <li className={styles.questionItem}>
           <label className={styles.questionAnswer} htmlFor="Sweden">

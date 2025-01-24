@@ -7,7 +7,6 @@ function QuestionPagination() {
         <li className={`${styles.questionsLabel} ${styles.answered}`}>1</li>
         <li className={styles.questionsLabel}>1</li>
       </ul>
-      <div className={styles.questionTitle}>Which country?</div>
     </>
   );
 }
