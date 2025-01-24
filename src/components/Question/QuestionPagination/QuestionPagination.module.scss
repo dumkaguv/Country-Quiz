@@ -1,0 +1,51 @@
+.questions {
+  &List {
+    display: flex;
+    column-gap: 15px;
+  }
+
+  &Label {
+    --size: #{fluid(48, 56)};
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size);
+    height: var(--size);
+    color: var(--color-light);
+    font-size: fluid(18, 22);
+    font-weight: 600;
+    border-radius: 50%;
+    background-color: var(--color-blue-20);
+    transition: var(--transition-duration);
+    z-index: 10;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      border-radius: 50%;
+      transition: opacity var(--transition-duration);
+      background-image: var(--linear-gradient);
+      opacity: 0;
+      z-index: -1;
+    }
+
+    @include hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &.answered {
+      background-image: var(--linear-gradient);
+    }
+
+    &.current {
+      cursor: not-allowed;
+    }
+  }
+}
