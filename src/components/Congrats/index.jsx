@@ -15,7 +15,7 @@ function Congrats() {
             You answer {correctAnswers}/{QUESTION_COUNT} correctly
           </p>
         </div>
-        <a href="/" className={styles.again}>Play Again</a>
+        <a href="./" className={styles.again}>Play Again</a>
       </div>
     </div>
   );
