@@ -1,8 +1,17 @@
-# React + Vite
+# Country Quiz 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Design preview for the Country Quiz](./preview.jpg)
 
-Currently, two official plugins are available:
+## Welcome! 👋
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Challenge is to build out this Country Quiz website.
+
+This project was created using React, SCSS, React Skeleton, Vite.
+
+Link to see the result: [Country Quiz](https://dumkaguv.github.io/Country-Quiz/)
+
+## Getting Started 🚀
+
+Run the development server:
+1. npm run dev
+2. Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
