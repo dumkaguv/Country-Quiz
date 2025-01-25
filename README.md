@@ -6,7 +6,7 @@
 
 Challenge is to build out this Country Quiz website.
 
-This project was created using React, SCSS, React Skeleton, Vite.
+This project was created using React, React Skeleton, SCSS, Vite.
 
 Link to see the result: [Country Quiz](https://dumkaguv.github.io/Country-Quiz/)
 
