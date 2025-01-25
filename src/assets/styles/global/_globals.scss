@@ -20,9 +20,9 @@ body {
   -webkit-tap-highlight-color: transparent;
   
   background-image: url("../images/bg.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 main {

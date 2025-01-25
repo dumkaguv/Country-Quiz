@@ -1,11 +1,12 @@
 .questions {
   &List {
     display: flex;
-    column-gap: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
   }
 
   &Label {
-    --size: #{fluid(48, 56)};
+    --size: #{fluid(42, 56)};
 
     position: relative;
     display: flex;
@@ -45,6 +46,8 @@
     }
 
     &.current {
+      background-color: var(--color-red);
+      background-image: none;
       cursor: not-allowed;
     }
   }

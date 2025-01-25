@@ -2,8 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-self: center;
-  row-gap: 50px;
+  row-gap: fluid(30, 50);
   width: 70%;
-  padding-top: 120px;
+  padding-top: fluid(25, 120);
   height: 100dvh;
+
+  @include tablet {
+    width: 95%;
+  }
 }

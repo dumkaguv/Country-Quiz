@@ -1,7 +1,10 @@
-import styles from "./QuizHeader.module.scss"
+import styles from "./QuizHeader.module.scss";
 import iconTrophy from "@/assets/icons/trophy.png";
+import { useQuestionContext } from "@/contexts/QuestionsContext";
 
 function QuizHeader() {
+  const { QUESTION_COUNT, correctAnswers } = useQuestionContext();
+
   return (
     <div className={styles.root}>
       <h1 className={styles.title}>Country Quiz</h1>
@@ -12,7 +15,9 @@ function QuizHeader() {
           width={32}
           height={32}
         />
-        <span className={styles.currentPointsValue}>0/10 Points</span>
+        <span className={styles.currentPointsValue}>
+          {correctAnswers}/{QUESTION_COUNT} Points
+        </span>
       </div>
     </div>
   );

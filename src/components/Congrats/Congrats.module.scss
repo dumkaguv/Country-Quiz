@@ -1,0 +1,75 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  row-gap: fluid(30, 50);
+  height: 100dvh;
+
+  @include tablet {
+    width: 95%;
+    align-self: center;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: fluid(15, 35);
+  padding: fluid(25, 50) fluid(15, 25);
+  background-color: var(--color-blue-10);
+  border-radius: 18px;
+  width: 43%;
+  margin: 0 auto;
+
+  @include laptop {
+    width: 60%;
+  }
+
+  @include tablet {
+    width: 70%;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.info {
+  display: grid;
+  row-gap: fluid(15, 20);
+}
+
+.title {
+  font-size: fluid(22, 32);
+  text-align: center;
+}
+
+.answers {
+  text-align: center;
+}
+
+.again {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  column-gap: 15px;
+  width: 100%;
+  padding: fluid(15, 25) fluid(20, 40);
+  border-radius: 16px;
+  background-image: var(--linear-gradient);
+  color: var(--color-light);
+  width: 70%;
+  border: none;
+  transition-duration: var(--transition-duration);
+
+  @include hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}

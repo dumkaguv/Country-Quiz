@@ -1,16 +1,11 @@
 import Quiz from "../components/Quiz";
-import { useState, createContext } from "react";
-
-const QuestionContext = createContext();
+import QuestionsProvider from "@/contexts/QuestionsContext";
 
 function App() {
-  
-
-
   return (
-    <>
+    <QuestionsProvider>
       <Quiz />
-    </>
+    </QuestionsProvider>
   );
 }
 
